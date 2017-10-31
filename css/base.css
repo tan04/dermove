@@ -1,0 +1,243 @@
+/*复位样式*/
+body,h1,h3,h2,h4,h5,h6,ul,li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #ebebeb;
+    font-family: "微软雅黑";
+}
+
+/*公共样式*/
+.container{
+    width:1180px;
+    margin: auto;
+}
+.text-red{
+    color: #f01414;
+}
+.main h2{
+    font-size: 38px;
+    font-weight: normal;
+    padding: 30px 0px;
+}
+
+
+
+/*index页面样式*/
+
+/*难在浮动，想好了浮动谁在写代码*/
+.nav{
+    overflow: hidden;
+    height:60px;
+    background: #fff;
+    line-height: 60px;
+    color: #14191e;
+}
+.nav .container .logo{
+    float: left;
+    font-weight:normal;
+    font-size: 18px;
+}
+.nav .container .logo img{
+    margin-top: 10px;
+    margin-right: 12px;
+}
+.nav .container .logo *{
+    float: left;
+}
+.nav .container .right{
+    float: right;
+}
+.nav .container .right .list{
+    float: left;
+    position: relative;
+}
+.nav .container .right .list li{
+    float: left;
+    transition: all 0.3s;
+}
+.nav .container .right .list li a{
+    color: #14191e;
+    padding: 0px 36px;
+    display: block;
+    height:60px;
+}
+.nav .container .right .list li a:hover{
+    color: red;
+}
+.nav .container .right .list li.cur{
+    width: 80px;
+    height:2px;
+    background: red;
+    position: absolute;
+    bottom:5px;
+    left: 12px;
+}
+.nav .container .right .btn{
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: #000;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+/*第二屏开始*/
+.page01{
+    text-align: center;
+    padding:30px 0px;
+    background: url(../images/bg-screen-1.png) no-repeat center;
+    min-height: 560px;
+}
+
+.page01 .content{
+    position: relative;
+}
+.page01 .content .screen-1-phone{
+    width:100%;
+    height:330px;
+    background: url(../images/screen-1-phone.png) no-repeat center;
+    background-size: 1346px;
+    position: absolute;
+    top:50px;
+    left:0px;
+    z-index: 2;
+    /*background-position: center;*/
+}
+.page01 .content .screen-1-shadow{
+    width:100%;
+    height:330px;
+    background: url(../images/screen-1-shadow.png) no-repeat center bottom;
+    background-size: 1346px;
+    position: absolute;
+    left:0px;
+    top:200px;
+    /*background-position: center;*/
+}
+/**/
+.page02{
+    background: #fafafa;
+    text-align: center;
+    padding: 30px 0;
+    max-height: 680px;
+    overflow: hidden;
+}
+.page02 p{
+    margin-bottom: 30px;
+}
+.page02 .container .content{
+    width:928px;
+    margin: auto;
+    position: relative;
+}
+.page02 .container .content .r1{
+	position: absolute;
+    top: 203px;
+    left: -79px;
+}
+
+.page02 .container .content .L1{
+	position: absolute;
+	top: 363px;
+	left: 732px;
+}
+
+.page02 .container .content .L2{
+	position: absolute;
+	top: 40px;
+	left: 586px;
+}
+.page02 .container .content .title *{
+    float: left;
+}
+.page02 .container .content .title span{
+    width:10px;
+    height: 10px;
+    display: block;
+    background: red;
+    position: absolute;
+    right: 5px;
+    top:5px;
+}
+.page03{
+    background: #a71316;
+    padding: 30px 0;
+    color: #fff;
+    max-height: 900px;
+    overflow: hidden;
+}
+.page03 .content{
+    margin: 35px 0px;
+}
+.page03 .content .list{
+    margin-top: 140px;
+}
+.page03 .content .list{
+    float: left;
+    width:370px;
+}
+.page03 .content .list li{
+    float: left;
+    width: 145px;
+    height: 125px;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.page03 .content .list li strong{
+    margin-top: 35px;
+    display: block;
+}
+.page03 .content .right{
+    float: left;
+    width:810px;
+    margin-top: -50px;
+}
+.page04{
+    padding: 40px 0px;
+    text-align: center;
+    background: #fff;
+}
+.page04 ul{
+    margin-top: 50px;
+    font-size: 0px; /*去掉间隙*/
+}
+.page04 ul li{
+    display: inline-block;
+    width:25%;
+    font-size: 16px;
+}
+
+.page04 ul li h6{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.page04 ul li p{
+    color: #666;
+    font-size: 14px;
+}
+
+@keyframes fd{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.scale{
+    animation: fd 1s ease;
+}
